@@ -1,0 +1,35 @@
+{
+  "name": "currency-convertor",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "test:unit": "vitest",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.43.1",
+    "@sveltejs/vite-plugin-svelte": "^3.0.2",
+    "@testing-library/svelte": "^5.1.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@tsconfig/svelte": "^5.0.2",
+    "jsdom": "^24.0.0",
+    "playwright": "^1.43.1",
+    "postcss-preset-env": "^9.5.5",
+    "svelte": "^4.2.12",
+    "svelte-check": "^3.6.7",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vitest": "^1.5.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "rollup": "npm:@rollup/wasm-node"
+    }
+  }
+}
