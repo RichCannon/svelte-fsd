@@ -1,6 +1,7 @@
 <script lang="ts">
 	import CurrencyInput from "$shared/ui/CurrencyInput/CurrencyInput.svelte";
 	import Switch from "$shared/ui/Switch/Switch.svelte";
+	import { _ } from "svelte-i18n";
 	import { onMount } from "svelte";
 	import {
 		UAHValue,
@@ -37,8 +38,8 @@
 		<h2 class="component-wrapper__loading">Loading...</h2>
 	{:else}
 		<Switch on:change={onSwitchChange} checked={$buyOrSale === "sale"}>
-			Buy
-			<svelte:fragment slot="suffix">Sale</svelte:fragment>
+			{$_("buy")}
+			<svelte:fragment slot="suffix">{$_("sale")}</svelte:fragment>
 		</Switch>
 		<CurrencyInput
 			name="UAH_input"
