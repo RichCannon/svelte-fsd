@@ -17,12 +17,16 @@
    --main-text-color: #ffffff;
    --success-color: #00a36f;
    --error-color: #e75258;
+   --disabled-color: #e2e2e2;
+   --disabled-text-color: #e2e2e2;
   }
   :global(html[data-theme="light"]) {
     --main-bg-color: #ffffff;
     --main-text-color: #262626;
     --success-color: #00a36f;
     --error-color: #e75258;
+    --disabled-color: #e2e2e2;
+    --disabled-text-color: #e2e2e2;
  }
  
  :global(html) {

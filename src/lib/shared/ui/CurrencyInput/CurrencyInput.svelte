@@ -260,14 +260,14 @@
 
 <style>
   .currencyInput__formatted {
-    border: 1px solid #e2e2e2;
+    border: 1px solid var(--disabled-color);
     padding: 10px;
     box-sizing: border-box;
     border-radius: 8px;
   }
 
   .currencyInput__formatted--zero {
-    color: #333;
+    color: var(--disabled-text-color);
   }
 
   .currencyInput__formatted--positive {
@@ -279,8 +279,8 @@
   }
 
   .currencyInput__formatted:disabled {
-    color: #999;
-    background-color: #e2e2e2;
+    color: var(--disabled-text-color);
+    background-color: var(--disabled-color);
     pointer-events: none;
     cursor: default;
   }
